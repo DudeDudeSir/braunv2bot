@@ -12,7 +12,7 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.1 [ 𝙱𝙴𝚃𝙰 ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 -  sorry closed source project. 
-- <B>Dev</B> -<a href=https://t.me/RahulrsParu><I>✯Rahul✯</I></a>"""
+- Dev- <a href=https://t.me/RahulrsParu><I>✯Rahul✯</I></a>"""
 
 <b>DEVS:</b>
 - <a href=https://t.me/moviecenter225>Group</a>"""
