@@ -14,7 +14,7 @@ from database.connections_mdb import active_connection
 import re
 import json
 import base64
-logger = logging.getLogger(name)
+logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🔰 Group', url='https://t.me/moviecentet225')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -44,11 +44,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('😎 Developer', url='https://t.me/RahulrsParu'),
-            InlineKeyboardButton('💢 Group', url='https://t.me/moviecenter225')
+            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
             ],[
-            InlineKeyboardButton('❄️ Help', callback_data='help'),
-            InlineKeyboardButton('🎭 About', callback_data='about')
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('😊 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -67,7 +67,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "💢 Join Updates Channel💢", url=invite_link.invite_link
+                    "🤖 Join Updates Channel", url=invite_link.invite_link
                 )
             ]
         ]
@@ -78,9 +78,8 @@ async def start(client, message):
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"{pre}#{file_id}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="Please Join My Updates Channel to use this Bot!",
-
-reply_markup=InlineKeyboardMarkup(btn),
+            text="**Please Join My Updates Channel to use this Bot!**",
+            reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
         return
@@ -89,7 +88,7 @@ reply_markup=InlineKeyboardMarkup(btn),
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('💢 Group', url='https://t.me/moviecenter225')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -167,8 +166,7 @@ reply_markup=InlineKeyboardMarkup(btn),
             protect = "/pbatch" if PROTECT_CONTENT else "batch"
         diff = int(l_msg_id) - int(f_msg_id)
         async for msg in client.iter_messages(int(f_chat_id), int(l_msg_id), int(f_msg_id)):
-
-if msg.media:
+            if msg.media:
                 media = getattr(msg, msg.media)
                 if BATCH_FILE_CAPTION:
                     try:
@@ -258,7 +256,7 @@ async def channel_info(bot, message):
     else:
         raise ValueError("Unexpected type of CHANNELS")
 
-text = '📑 Indexed channels/groups\n'
+    text = '📑 **Indexed channels/groups**\n'
     for channel in channels:
         chat = await bot.get_chat(channel)
         if chat.username:
@@ -266,7 +264,7 @@ text = '📑 Indexed channels/groups\n'
         else:
             text += '\n' + chat.title or chat.first_name
 
-    text += f'\n\nTotal: {len(CHANNELS)}'
+    text += f'\n\n**Total:** {len(CHANNELS)}'
 
     if len(text) < 4096:
         await message.reply(text)
@@ -370,7 +368,7 @@ async def settings(client, message):
         return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
 
-if chat_type == "private":
+    if chat_type == "private":
         grpid = await active_connection(str(userid))
         if grpid is not None:
             grp_id = grpid
@@ -479,8 +477,7 @@ if chat_type == "private":
 
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
-
-sts = await message.reply("Checking template")
+    sts = await message.reply("Checking template")
     userid = message.from_user.id if message.from_user else None
     if not userid:
         return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
