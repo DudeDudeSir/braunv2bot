@@ -24,9 +24,9 @@ async def start(client, message):
             InlineKeyboardButton('✨ Follow Me On Instagram ✨', url='http://instagram.com/An_an_du_128') 
             ],[
 
-            InlineKeyboardButton('🕵‍♂ Developer', url='https://t.me/Anandhukuttu'),
+            InlineKeyboardButton('🕵‍♂ Developer', url='https://t.me/RahulrsParu'),
 
-            InlineKeyboardButton('🎪 Group', url='https://t.me/Cinemahub182')
+            InlineKeyboardButton('🎪 Group', url='https://t.me/moviecenter225')
 
             ],[
 
@@ -55,9 +55,9 @@ async def start(client, message):
             InlineKeyboardButton('✨ Follow Me On Instagram ✨', url='http://instagram.com/An_an_du_128') 
             ],[
 
-            InlineKeyboardButton('🕵‍♂ Developer', url='https://t.me/Anandhukuttu'),
+            InlineKeyboardButton('🕵‍♂ Developer', url='https://t.me/RahulrsParu'),
 
-            InlineKeyboardButton('🎪 Group', url='https://t.me/Cinemahub182')
+            InlineKeyboardButton('🎪 Group', url='https://t.me/moviecenter225')
 
             ],[
 
@@ -105,9 +105,9 @@ async def start(client, message):
             InlineKeyboardButton('✨ Follow Me On Instagram ✨', url='http://instagram.com/An_an_du_128') 
             ],[
 
-            InlineKeyboardButton('🕵‍♂ Developer', url='https://t.me/Anandhukuttu'),
+            InlineKeyboardButton('🕵‍♂ Developer', url='https://t.me/RahulrsParu'),
 
-            InlineKeyboardButton('🎪 Group', url='https://t.me/Cinemahub182')
+            InlineKeyboardButton('🎪 Group', url='https://t.me/moviecenter225')
 
             ],[
 
@@ -143,7 +143,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡ᴊᴏɪɴ ɢʀᴏᴜᴘ⚡", url="https://t.me/Cinemahub182"),
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡ᴊᴏɪɴ ɢʀᴏᴜᴘ⚡", url="https://t.me/moviecenter225"),
                                               InlineKeyboardButton("💥ꜱʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/Cinemahub182") ],
                                             [ InlineKeyboardButton("🔖ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ🔖", url="https://telegra.ph/httpstelegraphfilee908cfc0d08e47ca337ecjpg-01-06") ] ] )
         )       
