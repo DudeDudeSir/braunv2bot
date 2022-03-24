@@ -43,7 +43,12 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],[
+            ],
+
+            [ 
+               InlineKeyboardButton('❤️follow on Instagram💕💞', url=fhttps://instagram.com/ajin_solo_?utm_medium=copy_link')
+
+             ],[
             InlineKeyboardButton('🙋 Developer', url='https://t.me/RahulrsParu'),
             InlineKeyboardButton('💢 Group', url='https://t.me/moviecenter225')
             ],[
