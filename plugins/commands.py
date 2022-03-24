@@ -46,7 +46,7 @@ async def start(client, message):
             ],
 
             [ 
-               InlineKeyboardButton('❤️follow on Instagram💕💞', url=fhttps://instagram.com/ajin_solo_?utm_medium=copy_link')
+               InlineKeyboardButton('❤️follow on Instagram💕💞', url=f'https://instagram.com/ajin_solo_?utm_medium=copy_link')
 
              ],[
             InlineKeyboardButton('🙋 Developer', url='https://t.me/RahulrsParu'),
