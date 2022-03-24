@@ -46,7 +46,7 @@ async def start(client, message):
             ],
 
             [ 
-               InlineKeyboardButton('❤️follow on Instagram💕💞', url=f'https://instagram.com/ajin_solo_?utm_medium=copy_link')
+               InlineKeyboardButton('❤️Follow on Instagram💕💞', url=f'https://instagram.com/ajin_solo_?utm_medium=copy_link')
 
              ],[
             InlineKeyboardButton('🙋 Developer', url='https://t.me/RahulrsParu'),
@@ -72,7 +72,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "💢 Join Updates Channel", url=invite_link.invite_link
+                    "💢 Join Updates Channel💢", url=invite_link.invite_link
                 )
             ]
         ]
@@ -249,7 +249,7 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
          reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡ᴊᴏɪɴ ɢʀᴏᴜᴘ⚡", url="https://t.me/moviecentet225"),
                                               InlineKeyboardButton("💥ꜱʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/moviecenter225") ],
-                                            [ InlineKeyboardButton("🔖ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ🔖", url="http://t.me/MsoneBot") ] ] )
+                                            [ InlineKeyboardButton("🔖ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ🔖", url="http://t.me/MsoneBot") ] ]
         
         )
                     
