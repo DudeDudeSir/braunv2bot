@@ -1,8 +1,11 @@
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙾 {},
 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍
+
 ⎆𝐖𝐨𝐫𝐤𝐢𝐧𝐠 𝐖𝐢𝐭𝐡 <a href= https://t.me/moviecenter225><b>MOVIE CENTER...</b></a>
+
  ➪ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝  𝐁𝐲 :<a href= https://t.me/RahulrsParu><I>Rahul</I></a>"""
+
     HELP_TXT = """𝙷𝙴𝚈 {}
 𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂."""
     ABOUT_TXT = """✯ 𝙼𝚈 𝙽𝙰𝙼𝙴: {}
