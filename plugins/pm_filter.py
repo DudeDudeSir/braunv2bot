@@ -83,6 +83,12 @@ async def next_page(bot, query):
             for file in files
         ]
 
+    btn.insert(0, 
+        [
+            InlineKeyboardButton(f'🔻⭕🔺 {search} 🔺⭕🔻', 'reqst1')
+        ]
+    )
+
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
@@ -612,7 +618,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('Piracy Is Crime')
+        elif query.data == 'reqst1':
+            await query.answer("Hey Bro 😍\n\n🎯 Click On The Button below The Files You Want And Start The Bot ⬇️", True)
+    try: await query.answer('Piracy Is Crime') 
+    except: pass
 
 
 async def auto_filter(client, msg, spoll=False):
@@ -659,7 +668,12 @@ async def auto_filter(client, msg, spoll=False):
                 ),
             ]
             for file in files
+          ]
+      btn.insert(0, 
+        [
+            InlineKeyboardButton(f'🎬 {search} 🎬', 'reqst1')
         ]
+    )
 
     if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
@@ -708,7 +722,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>Hey 👋🏻 {message.from_user.mention} 😍\n\n<i>🔖 Title : {search}\n📫 Your Files is Ready Now</i></b>""
+        cap = f"<b>Hey 👋🏻 {message.from_user.mention} 😍\n\n<i>🔖 Title : {search}\n📫 Your Files is Ready Now</i></b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
