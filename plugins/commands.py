@@ -46,10 +46,10 @@ async def start(client, message):
             ],
 
             [ 
-               InlineKeyboardButton('❤️Follow on Instagram💕💞', url=f'https://instagram.com/_ajin_solo__')
+               InlineKeyboardButton('❤️Follow on Instagram💕💞', url=f'https://instagram.com/dude_225')
 
              ],[
-            InlineKeyboardButton('🙋 Developer', url='https://t.me/RahulrsParu'),
+            InlineKeyboardButton('🙋 Developer', url='https://t.me/dude_tg'),
             InlineKeyboardButton('💢 Group', url='https://t.me/moviecenter225')
             ],[
             InlineKeyboardButton('♻️ Help', callback_data='help'),
@@ -247,7 +247,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-         reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡ᴊᴏɪɴ ɢʀᴏᴜᴘ⚡", url="https://t.me/moviecentet225"),
+         reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡ᴊᴏɪɴ ɢʀᴏᴜᴘ⚡", url="https://t.me/moviecenter225"),
                                               InlineKeyboardButton("💥ꜱʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/moviecenter225") ],
                                             [ InlineKeyboardButton("🔖ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ🔖", url="http://t.me/MsoneBot") ] ] )
         
