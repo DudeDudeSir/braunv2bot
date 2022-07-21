@@ -249,7 +249,7 @@ async def start(client, message):
         protect_content=True if pre == 'filep' else False,
          reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton("⚡ᴊᴏɪɴ ɢʀᴏᴜᴘ⚡", url="https://t.me/moviecenter225"),
                                               InlineKeyboardButton("💥ꜱʜᴀʀᴇ💥", url="https://t.me/share/url?url=https://t.me/moviecenter225") ],
-                                            [ InlineKeyboardButton("🔖ᴅᴏᴡɴʟᴏᴀᴅ ꜱᴜʙᴛɪᴛʟᴇ🔖", url="http://t.me/MsoneBot") ] ] )
+                                            [ InlineKeyboardButton("❤️‍🔥 Jᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ❤️‍🔥", url="https://t.me/+JtdQSHPMn-00ZGU9") ] ] )
         
         )
                     
